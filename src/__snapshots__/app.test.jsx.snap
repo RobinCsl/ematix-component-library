@@ -1,0 +1,31 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<div>
+  <div
+    className={undefined}
+  >
+    <div
+      className={undefined}
+    >
+      <img
+        alt="logo"
+        className={undefined}
+        src="logo.svg"
+      />
+      <div
+        className={undefined}
+      >
+        component-library
+      </div>
+      <div>
+        <div>
+          <button>
+            click me!
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;

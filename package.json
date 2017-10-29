@@ -1,15 +1,16 @@
 {
-  "name": "ematix-component-library",
-  "version": "1.0.1",
+  "name": "@ematix/ematix-component-library",
+  "version": "1.0.3",
   "private": false,
   "license": "UNLICENSED",
-  "description": "component-library",
+  "description": "react component library",
   "author": "Joshua Crass",
   "repository": {
     "type": "git",
     "url": "https://bitbucket.org/go-ematix/ematix-component-library.git"
   },
   "dependencies": {
+    "jest-cli": "^21.2.1",
     "react": "^16.0.0",
     "react-dom": "^16.0.0",
     "react-redux": "^5.0.6",
