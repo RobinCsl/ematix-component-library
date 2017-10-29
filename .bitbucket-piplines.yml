@@ -1,0 +1,16 @@
+image: node:6.10
+
+pipelines:
+  branches:
+    staging:
+      - step:
+          script:
+           - apt-get update
+           - apt-get -y install python-dev
+           - apt-get -y install python-pip
+           - pip install awscli
+           - yarn install
+           - yarn lint
+           - yarn test
+           - yarn build
+           - aws s3 sync build s3:// --delete

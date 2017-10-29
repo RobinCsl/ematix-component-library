@@ -1,0 +1,28 @@
+.app {
+  display: flex;
+  justify-content: center;
+
+  width: 100%;
+  min-height: 100vh;
+
+  background: #363636;
+
+  .appMain {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    .title {
+      padding: 20px;
+
+      color: #ffffff;
+
+      font-size: 4rem;
+    }
+
+    .appLogo {
+      height: 80px;
+    }
+  }
+}
