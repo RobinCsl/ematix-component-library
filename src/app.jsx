@@ -10,8 +10,12 @@ const App = () => (
     <div className={style.appMain}>
       <img src={logo} className={style.appLogo} alt="logo" />
       <div className={style.title}>component-library</div>
-      <div><Button /></div>
-      <div><Input /></div>
+      <div>
+        <Button />
+      </div>
+      <div>
+        <Input />
+      </div>
     </div>
   </div>
 );
