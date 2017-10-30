@@ -3,11 +3,10 @@
 exports[`renders correctly 1`] = `
 <div>
   <div>
-    <button
-      className={undefined}
-    >
-      click me!
-    </button>
+    <input
+      type="text"
+      value="test"
+    />
   </div>
 </div>
 `;

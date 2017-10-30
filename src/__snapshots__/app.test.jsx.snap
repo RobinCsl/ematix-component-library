@@ -20,9 +20,19 @@ exports[`renders correctly 1`] = `
       </div>
       <div>
         <div>
-          <button>
+          <button
+            className={undefined}
+          >
             click me!
           </button>
+        </div>
+      </div>
+      <div>
+        <div>
+          <input
+            type="text"
+            value="test"
+          />
         </div>
       </div>
     </div>

@@ -1,13 +1,14 @@
 {
   "name": "@ematix/ematix-component-library",
-  "version": "1.0.6",
+  "version": "1.0.10",
   "private": false,
   "license": "UNLICENSED",
   "description": "react component library",
   "author": "Joshua Crass",
+  "main": "dist/index.js",
+  "files": "dist",
   "repository": {
     "type": "git",
-    "url": "https://bitbucket.org/go-ematix/ematix-component-library.git"
   },
   "dependencies": {
     "react": "^16.0.0",
@@ -18,7 +19,7 @@
   "scripts": {
     "start": "node scripts/start.js",
     "clean-dist": "rimraf ./dist",
-    "build": "yarn run clean-dist && NODE_ENV=production `yarn bin`/babel ./src/components --out-dir ./dist",
+    "build": "yarn run clean-dist && NODE_ENV=production `yarn bin`/babel ./src/components --out-dir ./dist --ignore 'src/components/**/*.test.js'",
     "test:watch": "node scripts/test.js --env=jsdom --coverage --color --watchAll",
     "test": "node scripts/test.js --env=jsdom --coverage --color --ci",
     "lint": "eslint --ext .js,.jsx ./src",
@@ -35,6 +36,8 @@
     "babel-eslint": "8.0.1",
     "babel-jest": "21.2.0",
     "babel-loader": "7.1.2",
+    "babel-plugin-transform-object-rest-spread": "^6.26.0",
+    "babel-plugin-transform-react-jsx": "^6.24.1",
     "babel-preset-env": "^1.6.1",
     "babel-preset-react-app": "^3.0.3",
     "babel-preset-stage-0": "^6.24.1",

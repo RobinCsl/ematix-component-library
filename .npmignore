@@ -8,14 +8,8 @@ coverage/*
 .bitbucket-pipelines.yml
 .eslintignore
 .eslintrc.json
-.git
 .gitignore
 .npmignore
-.npmrc
 
-README.md
-
-package-lock.json
-package.json
 yarn-error.log
 yarn.lock
