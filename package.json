@@ -1,6 +1,6 @@
 {
   "name": "@ematix/ematix-component-library",
-  "version": "1.0.13",
+  "version": "1.0.14",
   "private": false,
   "license": "UNLICENSED",
   "description": "react component library",
@@ -11,21 +11,20 @@
     "type": "git"
   },
   "dependencies": {
+    "@storybook/addon-actions": "^3.2.14",
+    "@storybook/react": "^3.2.14",
     "react": "^16.0.0",
     "react-dom": "^16.0.0",
     "react-redux": "^5.0.6",
     "redux": "^3.7.2"
   },
   "scripts": {
-    "start": "node scripts/start.js",
     "clean-dist": "rimraf ./dist",
     "build":
       "yarn run clean-dist && NODE_ENV=production `yarn bin`/babel ./src/components --out-dir ./dist --ignore 'src/components/**/*.test.js' --copy-files",
-    "test:watch":
-      "node scripts/test.js --env=jsdom --coverage --color --watchAll",
-    "test": "node scripts/test.js --env=jsdom --coverage --color --ci",
     "lint": "eslint --ext .js,.jsx ./src",
-    "analyze": "source-map-explorer build/static/js/main.*"
+    "analyze": "source-map-explorer build/static/js/main.*",
+    "storybook": "start-storybook -p 9001 -c .storybook"
   },
   "pre-commit": ["test", "lint"],
   "devDependencies": {

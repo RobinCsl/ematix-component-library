@@ -1,11 +1,9 @@
 import React from "react";
 import style from "./style.scss";
 
-const Button = () => (
+const Button = props => (
   <div>
-    <button className={style.buttonStyle}>
-      click me!
-    </button>
+    <button className={style.buttonStyle}>{props.text}</button>
   </div>
 );
 
