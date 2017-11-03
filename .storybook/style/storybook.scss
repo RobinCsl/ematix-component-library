@@ -1,57 +1,9 @@
-// primary
-$color-bondi-blue: #0088bb;
-$color-chathams-blue: #175581;
-$color-picton-blue: #47b9e8;
-$color-link-water: #e6f3f8;
-$color-nile-blue: #17354a;
-
-// tertiary palette
-$color-mantis: #5bc759;
-$color-snowy-mint: #d9ffd9;
-$color-supernova: #ffce0c;
-$color-baja-white: #fff6d1;
-$color-blaze-orange: #ff6900;
-$color-tuft-bush: #ffe1cd;
-$color-valencia: #d5322f;
-$color-cosmos: #ffd7d6;
-
-// grayscale palette
-$color-black: #000000;
-$color-white: #ffffff;
-$color-concrete: #f2f2f2;
-$color-gallery: #ececec;
-$color-gray: #828282;
-$color-silver: #bdbdbd;
-$color-mine-shaft: #333333;
-$color-emperor: #4f4f4f;
-$color-shadow: rgba(0, 0, 0, 0.12);
-
-// alternate colors
-$color-cornflower: #94cfe5;
-$color-buttered-rum: #a7880c;
-$color-disco: #871550;
-
-// text colors
-$color-text-1: $color-mine-shaft;
-$color-text-2: $color-emperor;
-$color-text-3: $color-gray;
-
-// contextual colors
-$success-background: $color-snowy-mint;
-$success-text: $color-mantis;
-$progress-background: $color-link-water;
-$progress-text: $color-picton-blue;
-$alert-background: $color-baja-white;
-$alert-text: $color-buttered-rum;
-$error-background: $color-cosmos;
-$error-text: $color-valencia;
-$info-background: $color-emperor;
-$info-text: $color-white;
+@import "./colors.scss";
 
 @mixin text-body {
   font-size: 10px;
   font-weight: 400;
-  line-height: 20px;
+  line-height: 1.2;
   color: $color-text-2;
 }
 
@@ -83,7 +35,7 @@ body {
   }
 
   .storybook-header {
-    background: $color-nile-blue;
+    background: $color-ematix-blue;
     color: $color-white;
     padding: 30px;
 
@@ -158,7 +110,7 @@ body {
         }
 
         .name {
-          color: $color-chathams-blue;
+          color: $color-ematix-blue;
         }
 
         .type {

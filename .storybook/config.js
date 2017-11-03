@@ -4,7 +4,7 @@ import React from "react";
 import { configure, addDecorator } from "@storybook/react";
 const stories = require.context("../src/components", true, /story.jsx$/);
 
-import "./storybook.scss";
+import "./style/storybook.scss";
 import logo from "./images/ematix-logo.svg";
 
 addDecorator(story => (
@@ -25,8 +25,11 @@ addDecorator(story => (
 ));
 
 function loadStories() {
-  // Write stories inside each component directory and name them `story.js`
-  stories.keys().forEach(filename => stories(filename));
+  // Write stories inside each component directory
+  // and name them `story.jsx`
+  if (stories) {
+    stories.keys().forEach(filename => stories(filename));
+  }
 }
 
 configure(loadStories, module);

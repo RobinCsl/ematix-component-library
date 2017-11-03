@@ -4,9 +4,21 @@ module.exports = {
   module: {
     rules: [
       {
-        test: /\.scss$/,
-        loaders: ["style-loader", "css-loader", "sass-loader"],
-        include: path.resolve(__dirname, "../"),
+        test: /\.(s)?css$/,
+        use: [
+          {
+            loader: "style-loader",
+          },
+          {
+            loader: "css-loader",
+          },
+          {
+            loader: "sass-loader",
+            options: {
+              includePaths: ["node_modules", ".storybook"],
+            },
+          },
+        ],
       },
       {
         test: /\.svg?(\?v=[0-9]\.[0-9]\.[0-9])?$/,
@@ -17,5 +29,8 @@ module.exports = {
         },
       },
     ],
+  },
+  resolve: {
+    modules: ["src", ".storybook", "node_modules"],
   },
 };

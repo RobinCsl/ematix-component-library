@@ -1,4 +1,4 @@
 import Button from "./button";
-import Input from "./input";
+import CodeBlock from "./codeblock";
 
-export { Button, Input };
+export { Button, CodeBlock };
