@@ -18,13 +18,13 @@ const exampleCode = `
 
 storiesOf("Buttons", module).add("Buttons", () => (
   <div className="storybook-template">
-    <div className="title">Buttons</div>
-    <div className="description">Description of this cool component</div>
-    <div className="sub-title">How To Use</div>
+    <h1 className="title">Buttons</h1>
+    <p className="description">Description of this cool component</p>
+    <h2 className="sub-title">How To Use</h2>
     <div className="codeblock">
       <Codeblock language="javascript" value={howToUse} />
     </div>
-    <div className="sub-title">Common Buttons</div>
+    <h2 className="sub-title">Common Buttons</h2>
     <div className="button-row">
       <div className="button">
         <Button primary onClick={action("clicked")}>
@@ -34,8 +34,11 @@ storiesOf("Buttons", module).add("Buttons", () => (
       <div className="buttons">
         <Button disabled>Button</Button>
       </div>
+      <div className="buttons">
+        <Button success>Button</Button>
+      </div>
     </div>
-    <div className="sub-title">Code Example</div>
+    <h2 className="sub-title">Code Example</h2>
     <div className="codeblock">
       <Codeblock language="htmlmixed" value={exampleCode} />
     </div>
