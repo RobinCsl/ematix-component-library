@@ -1,0 +1,99 @@
+.common-button {
+  display: inline-block;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  user-select: none;
+  line-height: 48px;
+  padding: 0 30px;
+  font-weight: 700;
+  background: white;
+  border-radius: 2px;
+  border: 1px solid #bdbdbd;
+  font-size: 14px;
+  transition: all 0.15s ease-in-out 0s;
+
+  // two buttons together
+  & + & {
+    margin-left: 20px;
+  }
+
+  &.xs {
+    line-height: 24px;
+    padding: 0 15px;
+    font-size: 12px;
+  }
+
+  &.lg {
+    line-height: 64px;
+    padding: 0 40px;
+    font-size: 16px;
+  }
+
+  &:not(:disabled) {
+    cursor: pointer;
+  }
+
+  &:focus {
+    outline: none;
+    box-shadow: 0px 1px 6px #47b9e8;
+    border: 1px solid #47b9e8;
+  }
+
+  &:hover:not(:disabled) {
+    transform: translateY(-1px);
+  }
+
+  &:active {
+    background: #f2f2f2;
+    border: 1px solid #bdbdbd;
+    box-shadow: none;
+    transform: translateY(0px);
+  }
+
+  @mixin buttonStyle( $btnColor) {
+    color: white;
+    background: $btnColor;
+    border-color: $btnColor;
+
+    &:hover {
+      border: 1px solid darken($btnColor, 4%);
+      background: darken($btnColor, 4%);
+    }
+
+    &:active {
+      border: 1px solid darken($btnColor, 7%);
+      background: darken($btnColor, 5%);
+    }
+  }
+  $cgreen: #16bf2a;
+  $cred: #d90026;
+  $cblue: #0b70db;
+  $cgrey: #e1e7ed;
+  $corange: #f2bb3a;
+
+  $list: "success" "error" "primary" "warning" "default";
+  @each $state in $list {
+    &.#{$state} {
+      @if $state == success {
+        $btnColor: #16bf2a;
+        @include buttonStyle($cgreen);
+      } @else if $state == primary {
+        @include buttonStyle($cblue);
+      } @else if $state == error {
+        @include buttonStyle($cred);
+      } @else if $state == warning {
+        @include buttonStyle($corange);
+      } @else {
+        @include buttonStyle($cgrey);
+      }
+    }
+  }
+
+  &:disabled {
+    box-shadow: none;
+    background: #f2f2f2;
+    border: 1px solid #f2f2f2;
+    cursor: not-allowed;
+  }
+}
