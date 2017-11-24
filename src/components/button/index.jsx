@@ -4,8 +4,6 @@ import PropTypes from "prop-types";
 
 import { Link } from "react-router-dom";
 
-import _ from "lodash";
-
 import "./style.scss";
 
 export default class Button extends React.PureComponent {
@@ -58,9 +56,6 @@ export default class Button extends React.PureComponent {
       className,
     );
 
-    // __TODO
-    const props = _.omit(this.props, ["primary"]); // check what this does
-
     // put props together so we don't have to repeat it
     const btnProps = {
       className: classes,
@@ -70,7 +65,7 @@ export default class Button extends React.PureComponent {
     // Routing Link from react-router-dom
     if (to && typeof to === "string") {
       return (
-        <Link to={to} {...props}>
+        <Link to={to} {...btnProps}>
           {children}
         </Link>
       );
@@ -79,7 +74,7 @@ export default class Button extends React.PureComponent {
     // Classic Link as button
     if (href && typeof href === "string") {
       return (
-        <a href={href} {...props}>
+        <a href={href} {...btnProps}>
           {children}
         </a>
       );
