@@ -27,15 +27,7 @@ const howToUse = `
     } from "@ematix/ematix-component-library";
 `;
 const exampleCode = `
-    // Regular primary button
-    <div class="my-div-class">
-      <Button primary>Button</Button>
-    </div>
-
-    // Link
-    <div class="my-div-class">
-      <Button href="#link" lg>Button</Button>
-    </div>
+...
 `;
 
 const TestRecord = Record({
