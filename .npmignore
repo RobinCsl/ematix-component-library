@@ -4,12 +4,17 @@ public/*
 config/*
 coverage/*
 
+node_modules
+
 .babelrc
 .bitbucket-pipelines.yml
 .eslintignore
 .eslintrc.json
 .gitignore
 .npmignore
+.storybook
+.vscode
+
 
 yarn-error.log
 yarn.lock
