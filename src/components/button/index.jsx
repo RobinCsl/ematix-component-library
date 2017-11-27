@@ -2,8 +2,6 @@ import React from "react";
 import classnames from "classnames";
 import PropTypes from "prop-types";
 
-import _ from "lodash";
-
 import "./style.scss";
 
 export default class Button extends React.PureComponent {
@@ -19,15 +17,14 @@ export default class Button extends React.PureComponent {
   };
 
   render() {
+    const { primary, ...rest } = this.props;
     const classes = classnames({
       "common-button": true,
-      primary: this.props.primary,
+      primary,
     });
 
-    const props = _.omit(this.props, ["primary"]);
-
     return (
-      <button className={classes} {...props}>
+      <button className={classes} {...rest}>
         {this.props.children}
       </button>
     );
