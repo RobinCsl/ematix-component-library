@@ -4,6 +4,8 @@ public/*
 config/*
 coverage/*
 
+node_modules
+
 .babelrc
 .bitbucket-pipelines.yml
 .eslintignore
