@@ -13,6 +13,7 @@ html {
   font-family: sans-serif;
   -webkit-font-smoothing: antialiased;
   -webkit-text-size-adjust: 100%;
+  box-sizing: border-box;
   @include text-body;
 }
 
@@ -26,6 +27,10 @@ body {
   margin: 10px 20px;
   background-color: $color-white;
   box-shadow: 3px 3px 3px $color-shadow;
+  p {
+    font-size: 1.4rem;
+    color: $color-gray;
+  }
 }
 
 .storybook {
@@ -84,12 +89,6 @@ body {
       font-size: 1.3rem;
       margin: 40px 0 20px;
     }
-
-    .description {
-      font-size: 1.28rem;
-      color: $color-gray;
-    }
-
     .dark-background {
       background: #17354a;
       color: $color-gray;
