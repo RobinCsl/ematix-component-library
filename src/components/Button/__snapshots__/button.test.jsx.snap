@@ -18,5 +18,14 @@ exports[`<Button /> renders correctly 1`] = `
       Secondary
     </button>
   </div>
+  <div>
+    <a
+      className="common-button"
+      disabled={false}
+      href="#test"
+    >
+      Test a link with href param
+    </a>
+  </div>
 </div>
 `;

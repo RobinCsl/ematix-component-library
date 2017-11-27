@@ -2,9 +2,8 @@
   display: flex;
   align-items: center;
   justify-content: flex-start;
-
-  .button {
-    padding: 20px;
+  & + * {
+    margin-top: 30px;
   }
 }
 .codeblock {

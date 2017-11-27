@@ -16,7 +16,10 @@ describe("<Button />", () => {
           <div>
             <Button primary>Secondary</Button>
           </div>
-        </div>,
+          <div>
+            <Button href="#test">Test a link with href param</Button>
+          </div>
+        </div>
       )
       .toJSON();
     expect(tree).toMatchSnapshot();

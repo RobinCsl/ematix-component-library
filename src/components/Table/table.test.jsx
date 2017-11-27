@@ -11,7 +11,7 @@ import "./table.scss";
 
 import Table from "./Table";
 import TableCell from "./TableCell";
-import Button from "../button";
+import Button from "../Button";
 
 // Enum
 import Enum from "../../lib/enum";

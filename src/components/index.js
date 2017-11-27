@@ -1,6 +1,5 @@
-export { default as Button } from "./button";
+export { default as Button } from "./Button";
 export { default as CodeBlock } from "./codeblock";
-
 export {
   default as Table,
   TableCell,
