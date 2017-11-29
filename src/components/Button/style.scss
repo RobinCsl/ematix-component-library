@@ -1,5 +1,7 @@
 .common-button {
-  display: inline-block;
+  display: inline-flex;
+  align-items: center;
+
   text-align: center;
   white-space: nowrap;
   vertical-align: middle;
@@ -11,6 +13,17 @@
   border-radius: 2px;
   border: 1px solid #bdbdbd;
   transition: all 0.15s ease-in-out 0s;
+
+  svg {
+    height: 22px;
+    transform: translateY(-1px);
+    &:first-child {
+      margin-left: 6px;
+    }
+    &:last-child {
+      margin-right: 5px;
+    }
+  }
 
   & + & {
     margin-left: 20px;
@@ -66,12 +79,13 @@
     }
   }
   $cgreen: #27ae60;
-  $cred: #cf483a;
+  $cred: #cf5757;
   $cblue: #1063b0;
   $cgrey: #e1e7ed;
   $corange: #f0ae2e;
+  $cblack: #353535;
 
-  $list: "success" "error" "primary" "warning" "default";
+  $list: "success" "error" "primary" "warning" "default" "bl";
   @each $state in $list {
     &.#{$state} {
       @if $state == success {
@@ -83,6 +97,8 @@
         @include buttonStyle($cred);
       } @else if $state == warning {
         @include buttonStyle($corange);
+      } @else if $state == bl {
+        @include buttonStyle($cblack);
       } @else {
         @include buttonStyle($cgrey);
       }

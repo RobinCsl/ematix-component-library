@@ -15,6 +15,7 @@ export default class Button extends React.PureComponent {
     disabled: PropTypes.bool,
     children: PropTypes.node.isRequired,
     className: PropTypes.string,
+    bl: PropTypes.bool,
     // link?
     href: PropTypes.string,
     to: PropTypes.string,
@@ -29,6 +30,7 @@ export default class Button extends React.PureComponent {
     success: false,
     disabled: false,
     className: null,
+    bl: false,
     // link?
     href: null,
     to: null,
@@ -48,6 +50,7 @@ export default class Button extends React.PureComponent {
       className,
       xs,
       lg,
+      bl,
       ...rest
     } = this.props;
 
@@ -60,6 +63,7 @@ export default class Button extends React.PureComponent {
         success,
         xs,
         lg,
+        bl,
       },
       className,
     );

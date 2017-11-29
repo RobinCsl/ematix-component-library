@@ -1,6 +1,7 @@
 import React from "react";
 import { storiesOf } from "@storybook/react";
 import { action } from "@storybook/addon-actions";
+import IconArrowForward from "material-ui-icons/ArrowForward";
 import Button from "./index";
 
 import "./story.scss";
@@ -39,6 +40,9 @@ storiesOf("Buttons", module).add("Buttons", () => (
     <h2 className="sub-title">Common Buttons</h2>
     <h3>xs</h3>
     <div className="button-row">
+      <Button bl xs>
+        button
+      </Button>
       <Button xs>Button</Button>
       <Button disabled xs>
         Button
@@ -47,10 +51,10 @@ storiesOf("Buttons", module).add("Buttons", () => (
         Button
       </Button>
       <Button success xs>
-        Button
+        very long texted button
       </Button>
-      <Button success xs>
-        uiwhertuiherthiuearh
+      <Button error xs>
+        button
       </Button>
     </div>
     <h3>No size defined</h3>
@@ -65,6 +69,7 @@ storiesOf("Buttons", module).add("Buttons", () => (
       <Button onClick={action("button-click")} success>
         Button
       </Button>
+      <Button error>button</Button>
     </div>
     <h3>Lg</h3>
 
@@ -79,7 +84,30 @@ storiesOf("Buttons", module).add("Buttons", () => (
       <Button success lg>
         Button
       </Button>
+      <Button error lg>
+        button
+      </Button>
     </div>
+    <h3>Buttons with icons </h3>
+    <div className="button-row">
+      <Button disabled lg>
+        Button
+        <IconArrowForward />
+      </Button>
+      <Button primary lg>
+        Button
+        <IconArrowForward />
+      </Button>
+      <Button success lg>
+        Button
+        <IconArrowForward />
+      </Button>
+      <Button error lg>
+        Button
+        <IconArrowForward />
+      </Button>
+    </div>
+
     <h2 className="sub-title">Code Example</h2>
     <div className="codeblock">
       <Codeblock language="htmlmixed" value={exampleCode} />
