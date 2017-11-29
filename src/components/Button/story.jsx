@@ -30,13 +30,10 @@ storiesOf("Buttons", module).add("Buttons", () => (
     <div className="codeblock">
       <Codeblock language="javascript" value={howToUse} />
     </div>
-
     <h2 className="sub-title">UI Props</h2>
     <p>primary, warning, error, success</p>
-
     <h2 className="sub-title">Size Props</h2>
     <p>xs, lg</p>
-
     <h2 className="sub-title">As Link</h2>
     <p>to, href</p>
     <h2 className="sub-title">Common Buttons</h2>
@@ -52,11 +49,8 @@ storiesOf("Buttons", module).add("Buttons", () => (
       <Button success xs>
         Button
       </Button>
-      <Button warning xs>
-        Button
-      </Button>
-      <Button error xs>
-        Button
+      <Button success xs>
+        uiwhertuiherthiuearh
       </Button>
     </div>
     <h3>No size defined</h3>
@@ -71,14 +65,9 @@ storiesOf("Buttons", module).add("Buttons", () => (
       <Button onClick={action("button-click")} success>
         Button
       </Button>
-      <Button onClick={action("button-click")} warning>
-        Button
-      </Button>
-      <Button onClick={action("button-click")} error>
-        Button
-      </Button>
     </div>
     <h3>Lg</h3>
+
     <div className="button-row">
       <Button lg>Button</Button>
       <Button disabled lg>
@@ -88,12 +77,6 @@ storiesOf("Buttons", module).add("Buttons", () => (
         Button
       </Button>
       <Button success lg>
-        Button
-      </Button>
-      <Button warning lg>
-        Button
-      </Button>
-      <Button error lg>
         Button
       </Button>
     </div>
