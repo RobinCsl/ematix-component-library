@@ -41,7 +41,7 @@ storiesOf("Buttons", module).add("Buttons", () => (
     <h3>xs</h3>
     <div className="button-row">
       <Button bl xs>
-        button
+        very long texted button
       </Button>
       <Button xs>Button</Button>
       <Button disabled xs>
@@ -51,10 +51,10 @@ storiesOf("Buttons", module).add("Buttons", () => (
         Button
       </Button>
       <Button success xs>
-        very long texted button
+        Button
       </Button>
       <Button error xs>
-        button
+        Button
       </Button>
     </div>
     <h3>No size defined</h3>
@@ -85,7 +85,7 @@ storiesOf("Buttons", module).add("Buttons", () => (
         Button
       </Button>
       <Button error lg>
-        button
+        Button
       </Button>
     </div>
     <h3>Buttons with icons </h3>
