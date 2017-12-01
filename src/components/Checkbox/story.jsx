@@ -32,6 +32,7 @@ storiesOf("Form", module).add("Checkbox", () => (
     <div className="codeblock">
       <Codeblock language="javascript" value={howToUse} />
     </div>
+
     <h3> CheckBoxes </h3>
     <p>
       <input type="checkbox" id="c1" name="cc" />
@@ -50,6 +51,8 @@ storiesOf("Form", module).add("Checkbox", () => (
         </span>Unchecked CheckBox
       </label>
     </p>
+
+    <h3> Radio Buttons </h3>
     <p>
       <input type="radio" id="r1" name="rr" />
       <label htmlFor="r1">
@@ -59,8 +62,8 @@ storiesOf("Form", module).add("Checkbox", () => (
     <p>
       <input type="radio" id="r2" name="rr" />
       <label htmlFor="r2">
-        Radio Button 2
         <span />
+        Radio Button 2
       </label>
     </p>
 
