@@ -2,6 +2,7 @@ import React from "react";
 import { storiesOf } from "@storybook/react";
 import IconDone from "material-ui-icons/Done";
 import "./story.scss";
+import "./icon.scss";
 import Codeblock from "../codeblock";
 
 const howToUse = `
@@ -31,6 +32,15 @@ storiesOf("Form", module).add("Checkbox", () => (
     <h2 className="sub-title">How To Use</h2>
     <div className="codeblock">
       <Codeblock language="javascript" value={howToUse} />
+    </div>
+    <div className="material-icons">
+      <p>
+        <h3>Material icons </h3>
+        <input type="checkbox" className="ios8-switch" id="mm" />
+        <label htmlFor="mm">
+          <span />Active
+        </label>
+      </p>
     </div>
 
     <h3> CheckBoxes </h3>
