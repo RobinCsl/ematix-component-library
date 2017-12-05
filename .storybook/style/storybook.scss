@@ -1,0 +1,134 @@
+@import "./colors.scss";
+
+@mixin text-body {
+  font-size: 10px;
+  font-weight: 400;
+  line-height: 1.2;
+  color: $color-text-2;
+}
+
+body,
+html {
+  color: $color-text-2;
+  font-family: sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-size-adjust: 100%;
+  box-sizing: border-box;
+  @include text-body;
+}
+
+html {
+  height: 100%;
+  background-color: $color-concrete;
+}
+
+body {
+  height: 95%;
+  margin: 10px 20px;
+  background-color: $color-white;
+  box-shadow: 3px 3px 3px $color-shadow;
+  p {
+    font-size: 1.4rem;
+    color: $color-gray;
+  }
+}
+
+.storybook {
+  .storybook-body {
+    background-color: $color-white;
+    padding: 20px;
+  }
+
+  .storybook-header {
+    background: $color-ematix-blue;
+    color: $color-white;
+    padding: 30px;
+
+    .storybook-header-info {
+      margin-left: 50px;
+
+      .storybook-header-info-logo {
+        width: 30px;
+        padding-right: 20px;
+      }
+
+      .storybook-header-info-title {
+        margin-bottom: 15px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+      }
+
+      .storybook-header-info-name {
+        font-size: 5rem;
+      }
+
+      .storybook-header-info-section {
+        font-size: 2rem;
+      }
+    }
+  }
+  // Story Template
+  .storybook-template {
+    margin: 0 50px;
+
+    .storybook-title {
+      color: $color-emperor;
+      font-size: 2.42rem;
+      margin: 20px 0;
+    }
+
+    .storybook-sub-title {
+      color: $color-emperor;
+      font-size: 1.57rem;
+      margin: 40px 0 20px;
+    }
+
+    .storybook-small-subheader {
+      color: $color-gray;
+      font-size: 1.3rem;
+      margin: 40px 0 20px;
+    }
+    .storybook-dark-background {
+      background: #17354a;
+      color: $color-gray;
+    }
+
+    .storybook-component-properties {
+      display: flex;
+      flex-direction: row;
+      align-content: flex-start;
+
+      &-row {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+
+        div {
+          padding: 20px;
+        }
+
+        .prop-name {
+          color: $color-ematix-blue;
+        }
+
+        .prop-type {
+          color: $color-valencia;
+        }
+
+        .prop-default {
+          color: $color-gray;
+        }
+
+        .prop-description {
+          color: $color-emperor;
+        }
+
+        .prop-header {
+          color: $color-gray;
+          font-size: 1.3rem;
+        }
+      }
+    }
+  }
+}

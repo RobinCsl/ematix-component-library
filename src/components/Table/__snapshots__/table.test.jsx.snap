@@ -1,0 +1,114 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Button /> renders correctly 1`] = `
+<div>
+  <div
+    className="ecl--table"
+  >
+    <div
+      className="ecl--table-header"
+    >
+      <div
+        className="ecl--table-cell"
+      >
+        Name
+      </div>
+      <div
+        className="ecl--table-cell"
+      >
+        Status
+      </div>
+      <div
+        className="ecl--table-cell"
+      >
+        Status
+      </div>
+    </div>
+    <div
+      className="ecl--table-content"
+    >
+      <div
+        className="ecl--table-row"
+        onClick={[Function]}
+      >
+        <div
+          className="ecl--table-cell"
+        >
+          Barry Allen
+        </div>
+        <div
+          className="ecl--table-cell"
+          onClick={[Function]}
+        >
+          Running
+        </div>
+        <div
+          className="ecl--table-cell"
+        >
+          <button
+            className="common-button primary"
+            disabled={false}
+            onClick={[Function]}
+          >
+            Action
+          </button>
+        </div>
+      </div>
+      <div
+        className="ecl--table-row"
+        onClick={[Function]}
+      >
+        <div
+          className="ecl--table-cell"
+        >
+          Harrisson Wells
+        </div>
+        <div
+          className="ecl--table-cell"
+          onClick={[Function]}
+        >
+          Active
+        </div>
+        <div
+          className="ecl--table-cell"
+        >
+          <button
+            className="common-button primary"
+            disabled={false}
+            onClick={[Function]}
+          >
+            Action
+          </button>
+        </div>
+      </div>
+      <div
+        className="ecl--table-row"
+        onClick={[Function]}
+      >
+        <div
+          className="ecl--table-cell"
+        >
+          Iris West
+        </div>
+        <div
+          className="ecl--table-cell"
+          onClick={[Function]}
+        >
+          Terminated
+        </div>
+        <div
+          className="ecl--table-cell"
+        >
+          <button
+            className="common-button primary"
+            disabled={false}
+            onClick={[Function]}
+          >
+            Action
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;

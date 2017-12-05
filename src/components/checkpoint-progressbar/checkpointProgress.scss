@@ -1,0 +1,33 @@
+$active-color: #1063B0;
+$inactive-color: #BDBDBD;
+
+.checkpointProgress {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 35px 0px 50px 0px;
+    .bar {
+    flex: 1 0 auto;
+    height: 2px;
+    background-color: $inactive-color;
+    &.isActive {
+      background-color: $active-color;
+    }
+    .circle {
+      height: 18px;
+      width: 18px;
+      position: relative;
+      display: inline-block;
+      left: calc(100% - 18px);
+      background-color: inherit;
+      transform: translateY(-42%);
+      border-radius: 50%;
+      .title {
+        position: absolute;
+        top: 25px;
+        transform: translateX(calc(-50% + 9px)); // 50% of the text width - half of the circle width
+        font-size: initial;
+        white-space: nowrap;
+      }
+    }
+  }
+}

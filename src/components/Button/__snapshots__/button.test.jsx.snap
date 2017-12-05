@@ -1,0 +1,31 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Button /> renders correctly 1`] = `
+<div>
+  <div>
+    <button
+      className="common-button"
+      disabled={true}
+    >
+      Primary
+    </button>
+  </div>
+  <div>
+    <button
+      className="common-button primary"
+      disabled={false}
+    >
+      Secondary
+    </button>
+  </div>
+  <div>
+    <a
+      className="common-button"
+      disabled={false}
+      href="#test"
+    >
+      Test a link with href param
+    </a>
+  </div>
+</div>
+`;
