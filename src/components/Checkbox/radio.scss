@@ -1,0 +1,40 @@
+.ecl__radioButton {
+  //radio buttons
+  input[type="radio"] {
+    display: none;
+
+    & + label {
+      color: #4f4f4f;
+    }
+    //customized radio button
+    & + label span {
+      margin-top: 20px;
+      border: 1px solid #bdbdbd;
+      border-radius: 999px;
+      display: inline-block;
+      margin: -2px 10px 0 0;
+      vertical-align: middle;
+      cursor: pointer;
+      height: 12px;
+      width: 12px;
+      position: relative;
+    }
+    &:checked + label span {
+      background-color: #4f4f4f;
+      border: 1px solid #4f4f4f;
+      border-radius: 999px;
+      //the second white circle
+      &:after {
+        content: "";
+        position: absolute;
+        top: 1px;
+        left: 1px;
+        display: block;
+        height: 8px;
+        width: 8px;
+        border: 1px solid white;
+        border-radius: 50%;
+      }
+    }
+  }
+}

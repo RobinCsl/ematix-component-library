@@ -1,0 +1,50 @@
+.ecl__toggle {
+  input[type="checkbox"] {
+    position: absolute;
+    margin: 8px 0 0 16px;
+
+    & + label {
+      position: relative;
+      padding: 5px 0 0 50px;
+      line-height: 2em;
+      //the eclipse shape inactive
+      &:before {
+        content: "";
+        position: absolute;
+        display: block;
+        left: 0;
+        top: 0;
+        width: 38px;
+        height: 20px;
+        border-radius: 12.5px;
+        background: #bdbdbd;
+        border: 1px solid #bdbdbd;
+        transition: all 0.3s;
+      }
+      //the circle inactive
+      &:after {
+        content: "";
+        position: absolute;
+        display: block;
+        left: 2px;
+        top: 2px;
+        width: 16px;
+        height: 16px;
+        border-radius: 16px;
+        background: #fff;
+        border: 1px solid #fff;
+        transition: all 0.3s;
+      }
+    }
+    //the eclipse active mode
+    &:checked + label:before {
+      background: #1063b0;
+      border: 1px solid #1063b0;
+      border-radius: 12.5px;
+    }
+    //the circle active mode -the horizontal move
+    &:checked + label:after {
+      transform: translateX(100%);
+    }
+  }
+}

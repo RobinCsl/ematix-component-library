@@ -1,0 +1,47 @@
+.ecl__checkbox {
+  margin-top: 40px;
+  //checkboxes
+  input[type="checkbox"] {
+    //hiding the original one
+    display: none;
+
+    //label (text that defines the checkbox)
+    & + label {
+      color: #4f4f4f;
+    }
+    //the box that we created with border (unchecked)
+    & + label span {
+      -webkit-animation: mymove 5s infinite;
+      margin-top: 20px;
+      border: 1px solid #bdbdbd;
+      border-radius: 2px;
+      display: inline-block;
+      margin: -2px 10px 0 0;
+      vertical-align: middle;
+      cursor: pointer;
+      height: 12px;
+      width: 12px;
+
+      //the done icon
+      svg {
+        &:hover {
+          color: pink;
+        }
+        color: white;
+        height: 15px;
+        transform: translate(-12px, -2px);
+        &:first-child {
+          margin-left: 6px;
+        }
+        &:last-child {
+          margin-right: 5px;
+        }
+      }
+    }
+    //checked checkbox
+    &:checked + label span {
+      background-color: #4f4f4f;
+      border: 1px solid #4f4f4f;
+    }
+  }
+}
