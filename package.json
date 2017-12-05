@@ -1,14 +1,12 @@
 {
   "name": "@ematix/ematix-component-library",
-  "version": "1.2.3",
+  "version": "1.2.4",
   "private": false,
   "license": "MIT",
   "description": "react component library",
   "author": "Joshua Crass",
   "main": "dist/index.js",
-  "files": [
-    "dist"
-  ],
+  "files": ["dist"],
   "repository": {
     "type": "git"
   },
@@ -28,10 +26,7 @@
     "storybook": "start-storybook -p 9001 -c .storybook",
     "test": "jest"
   },
-  "pre-commit": [
-    "test",
-    "lint"
-  ],
+  "pre-commit": ["test", "lint"],
   "prepublish": "build",
   "devDependencies": {
     "@storybook/addon-actions": "^3.2.14",
@@ -90,9 +85,7 @@
     "webpack-manifest-plugin": "1.3.2"
   },
   "jest": {
-    "collectCoverageFrom": [
-      "src/components/*/*.{jsx}"
-    ],
+    "collectCoverageFrom": ["src/components/*/*.{jsx}"],
     "testMatch": [
       "<rootDir>/src/**/__tests__/**/*.js?(x)",
       "<rootDir>/src/**/?(*.)(spec|test).js?(x)"
@@ -104,19 +97,10 @@
       "^.+\\.css$": "<rootDir>/config/jest/cssTransform.js",
       "^(?!.*\\.(js|jsx|css|json)$)": "<rootDir>/config/jest/fileTransform.js"
     },
-    "transformIgnorePatterns": [
-      "[/\\\\]node_modules[/\\\\].+\\.(js|jsx)$"
-    ],
+    "transformIgnorePatterns": ["[/\\\\]node_modules[/\\\\].+\\.(js|jsx)$"],
     "moduleNameMapper": {
       "^react-native$": "react-native-web"
     },
-    "moduleFileExtensions": [
-      "web.js",
-      "js",
-      "json",
-      "web.jsx",
-      "jsx",
-      "node"
-    ]
+    "moduleFileExtensions": ["web.js", "js", "json", "web.jsx", "jsx", "node"]
   }
 }

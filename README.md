@@ -10,13 +10,13 @@ Ematix Component Library can be installed or added via npm or yarn.
 
 npm
 
-```
+```bash
 npm install @ematix/ematix-component-library
 ```
 
 yarn
 
-```
+```bash
 yarn add @ematix/ematix-component-library
 ```
 
